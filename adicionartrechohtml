@@ -1,0 +1,144 @@
+Esse codigo serve para adicionar algo dentro 
+do seu  html, quando você nao tem acesso ao codigo font.(lembrando que voce deve ter acesso
+ao uma pasta do servidor que possa subir os scripts)
+
+
+
+O codígo abaixo seleciona um ID de uma div de uma pagina html e inseri um conteudo após  a div com o ID referenciado no codigo
+
+abra o site www.univarejo.com.br, depois aperte F12 para abrir o inspecionar elemento. 
+
+Depois clique na aba Console, e cole o codigo abaixo, e voce vera que  irá inserir uma imagem e um texto no "meio" da pagina 
+
+
+
+===============COPIAR O CÓDIGO ABAIXO=============
+
+
+var div = document.createElement('div');
+    div.setAttribute('class', 'tudo');
+var img = document.createElement("img");
+img.src = "https://www.univarejo.com.br/fotos/zoom/414fz1/compressor-10-pes-100-litros-140-libras-2-hp-csv-10-100-pro-schulz.jpg";
+div.appendChild(img);
+var para = document.createElement("p");
+para.setAttribute('class', 'animated infinite flip');
+para.innerHTML = "promoção da semana";
+div.appendChild(para)
+document.querySelector("#banner-18").appendChild(div);
+
+
+==============FIM DO CÓDIGO======================
+
+
+Persolanizando...
+
+
+Aqui vai algumas dicas para que você possa deixar essa imagem e esse texto mais "geitado"(SAP* mais bUnito) como dizem aqui no interior...
+
+
+Abaixo esta o css - LEMBRE-SE 
+
+o codigo esta comentado, so tome cuidado com isso...
+
+
+<style>
+
+/*o codigo abaixo  limpa os dados padrões do navegador */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* fim limpa css padrão  */
+
+/* os estilos abaixo estilizam  os itens incluidos com javascript, É IMPORTANTE que voce inclua os estilos na propia tag html, não e uma boa pratica mas para esse fim de aprendizado vamos utilizar)
+p {
+
+  width: 50%;
+  height: 25rem;
+  background-color: black;
+  color: floralwhite;
+display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 50px;
+  font-family: arial, sans-serif;
+  text-transform: uppercase;
+}
+
+img{
+
+  width: 50%;
+  height: 25rem;
+  background-color: black;
+  color: floralwhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+
+
+}
+
+
+/* fim estilização tags html  */
+
+/* esse css so precisa inserir  no arquivo css pq ele ira estilizar a class tudo adicionado com nosso javascript */
+.tudo{
+
+display: flex;
+
+}
+
+</style>
+
+
+
+E é isso testa ai e espero ter ajudado!
+
