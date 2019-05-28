@@ -129,7 +129,7 @@ img{
 
 /* fim estilização tags html  */
 
-/* esse css so precisa inserir  no arquivo css pq ele ira estilizar a class tudo adicionado com nosso javascript */
+/* esse css so precisa ser inserido  no arquivo css pq ele estilize a class tudo adicionado com nosso javascript */
 .tudo{
 
 display: flex;
