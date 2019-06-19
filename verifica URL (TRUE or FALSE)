@@ -1,0 +1,31 @@
+Para testar esse código abra o navegador e acesse www.google.com.br 
+
+Após isso aperte f12 ou clique com o botão direito do mouse e escolha "inspecionar Elemento"
+
+
+Depois va na Aba "Console" cole o script abaixo somente o conteudo  que estiver entre  ==========texto ====================
+e ==============fim  =================
+
+
+
+
+
+============= Script Abaixo =======================
+
+var url_atual = window.location.href;
+if ( url_atual === "https://www.google.com.br/" ){
+
+console.log("funciona");
+
+} else{
+
+console.log("não funciona");
+
+}
+
+
+============== FIM ========================================
+
+
+Com isso você pode  fazer coisas se vc estiver dentro de uma pagina com uma url especifica
+sem que o seu script carregue em todas as paginas da sua aplicação
