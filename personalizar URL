@@ -1,0 +1,11 @@
+Este codigo permite gerar uma url atraves de um formulario ou informações personalizadas
+
+var http = "https://";            // define  se sera www ou http ou https
+var nomeempresa = "w3";           // aqui voce pode pegar o nome da empresa por exemplo
+var complementlink = "schools";   // aqui o complemento do link
+var fimurl  = ".com.br";          // aqui definir se vao ser o final .com ou .com.br ou .or ou . gov 
+var corpolink = http+nomeempresa+complementlink+fimurl;    // aki concatena(juntatudo) toda informação
+window.location.href = corpolink;                          //aki vai reenderizar para o link e voce poderar testar se esta correto
+  
+  
+  
