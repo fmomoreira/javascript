@@ -1,0 +1,46 @@
+======================= arquivo js =========================
+
+'############ V1 ##############'
+// const createElement = (el) => document.createElement(el)
+// const selectElement = (el) => document.querySelector(el)
+
+// const randomID = () => Math.floor(Math.random() * 10)
+
+// const insertElement = (el) => (event) => {
+//   const refElement = selectElement('#a')
+//   const newEl = createElement(el)
+//   newEl.innerText = `${el} ${randomID()}`
+//   refElement.after(newEl)
+// }
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   document
+//     .querySelector('button')
+//     .addEventListener('click', insertElement('div'))
+// })
+
+'############ V2 ##############'
+const insertElement = (el) => (event) => {
+  const refElement = document.querySelector('#a')
+  const newEl = document.createElement(el)
+  newEl.innerText = 'nova div'
+  refElement.after(newEl)
+   
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  document
+    .querySelector('button')
+    .addEventListener('click', insertElement('div'))
+})
+
+
+
+
+====================   html ===============
+
+<div id="a">div a</div>
+<div id="b">div b</div>
+
+<hr>
+<button type="button"> Inserir Elemento</button>
