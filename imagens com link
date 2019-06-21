@@ -1,0 +1,35 @@
+======= cria div principal ========
+
+var div = document.createElement('div');
+div.setAttribute('class', 'temaprincipal');
+        ========Insere conteudo ===========
+===== cria  as tag <a> e inserir  <img> e Link ===========
+var link = document.createElement("a");
+ link.href = "#component-group-21";
+var img = document.createElement("img");
+img.setAttribute('class', 'img-fluid');
+img.src = "https://www.univarejo.com.br/FILES/_CUSTOM_TEMPLATES/CUSTOM_template_00001_2_1_1_1_1/_IMG/bt-namorados-esportista.jpg";
+======coloca a tag <img> dentro da tag <a>=======
+link.appendChild(img);
+div.appendChild(link);
+
+
+
+var linkum = document.createElement("a");
+ linkum.href = "#component-34";
+var imgum = document.createElement("img");
+imgum.setAttribute('class', 'img-fluid');
+imgum.src = "https://www.univarejo.com.br/FILES/_CUSTOM_TEMPLATES/CUSTOM_template_00001_2_1_1_1_1/_IMG/bt-namorados-maker.jpg";
+linkum.appendChild(imgum);
+div.appendChild(linkum);
+var linkdois = document.createElement("a");
+ linkdois.href = "#component-31";
+var imgdois = document.createElement("img");
+imgdois.setAttribute('class', 'img-fluid');
+imgdois.src = "https://www.univarejo.com.br/FILES/_CUSTOM_TEMPLATES/CUSTOM_template_00001_2_1_1_1_1/_IMG/bt-namorados-caseiro.jpg";
+linkdois.appendChild(imgdois);
+div.appendChild(linkdois);
+============ FIM Insere Conteudo ================
+
+===========insere como filho de uma ID especifico da pagina ================
+document.querySelector("#banner-anchor-18").appendChild(div);
