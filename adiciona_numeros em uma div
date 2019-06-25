@@ -1,0 +1,24 @@
+================= CONTEUDO HTML ===============
+
+
+<div id="exemplo"></div>
+
+
+
+
+
+=================== CONTEUDO JS =================
+
+
+ar result = '';
+var i = 0;
+do {
+   i += 1;
+   result += i + ' ';
+} while (i < 5);
+document.getElementById('exemplo').innerHTML = result;
+
+
+================== Resultado ===================
+
+1 2 3 4 5
