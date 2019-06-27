@@ -1,0 +1,21 @@
+Insira um link dentro do head do seu site via javascript 
+
+======================== HTML =========================
+
+<head> 
+
+</head>
+
+<body>
+  <img class="animated infinite bounce" src="https://raw.githubusercontent.com/fmomoreira/teste/master/fire.jpg" alt="Imagem de página não encontrada" width="330" height="202" />
+</body>  
+
+
+
+======================== COdigo Javascript ==========================
+
+
+let teste = document.createElement('link');
+teste.rel = "stylesheet";
+teste.href = "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css";
+document.querySelector("head").appendChild(teste);
