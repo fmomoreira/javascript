@@ -1,0 +1,9 @@
+var botoes = document.querySelectorAll('[id^="li-productid-"]');
+    for (var i = 0; i <= botoes.length; i++) {
+    
+        let botao = botoes[i];
+    	var clicar = botao.querySelector('.details');
+        clicar.setAttribute('target' , '_blank');
+        clicar.click();
+    
+}
