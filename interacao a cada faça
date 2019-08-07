@@ -1,0 +1,7 @@
+    var h = 1;
+      function fazdownload() {
+        var botoes = document.querySelectorAll('[id^="li-productid-"]');
+        console.log(botoes[h]);
+        h++;
+      }
+      setInterval(fazdownload, 6000);
