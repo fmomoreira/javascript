@@ -1,0 +1,9 @@
+var h = 1;
+      function fazdownload() {
+        var botoes = document.querySelectorAll('[id^="imagem-"]');
+        var imagem = botoes[h];
+        imagem.click();
+        h++;
+      }
+      setInterval(fazdownload, 2000);
+  </script>
