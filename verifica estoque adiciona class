@@ -1,0 +1,32 @@
+Acesse www.univarejo.com.br e siga os passos 
+
+
+1 - Abra modo desenvolvedor do seu Navegador (f12)
+
+2 - cole o codigo abaixo dentro da aba console
+
+
+Resultado -  todos os produtos que tiverem esgotados irao receber uma class display none (desaparecer automa-
+ticamente) até que o estoque deste produto seja alimentado
+
+
+var produtos = document.querySelectorAll('[id^="li-productid-"]');
+for(var i = 0; i<= produtos.length; i++){
+
+    var produto = produtos[i];  
+
+    var selecionatag = produto.querySelector(".price");
+    var  teste = selecionatag.textContent;
+
+
+
+if(teste === "Esgotado"){
+
+produto.style.display = "none";
+
+}else{
+
+console.log("alguns produtos zeraram estoque");
+
+}
+}
