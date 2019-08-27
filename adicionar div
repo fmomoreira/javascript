@@ -33,8 +33,16 @@ document.addEventListener('DOMContentLoaded', () => {
     .querySelector('button')
     .addEventListener('click', insertElement('div'))
 })
+=========================  fim script =============
 
 
+============script Filipão acelerex Turbo ===================
+let criadiv = document.createElement('div');
+criadiv.innerText='funcionou';
+let selecionid = document.querySelector('#custom-bg');
+selecionid.after(criadiv);
+
+===============fim acelerex turbo =============
 
 
 ====================   html ===============
